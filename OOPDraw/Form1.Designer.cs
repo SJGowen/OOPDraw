@@ -42,8 +42,10 @@
             "Draw Pentagon",
             "Draw Hexagon",
             "Draw Heptagon",
-            "Draw Octagon"});
-            this.comboBox1.Location = new System.Drawing.Point(99, 12);
+            "Draw Octagon",
+            "Draw House",
+            "Move Shape"});
+            this.comboBox1.Location = new System.Drawing.Point(108, 12);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(174, 21);
             this.comboBox1.TabIndex = 0;
@@ -53,9 +55,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Shape to Draw:";
+            this.label1.Text = "Active Command:";
             // 
             // Form1
             // 

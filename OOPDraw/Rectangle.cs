@@ -2,20 +2,20 @@
 
 namespace OOPDraw
 {
-    public class Rectangle : RegularShape
+    public class Rectangle : Shape
     {
         private float Width { get; set; }
         private float Height { get; set; }
         
-        public Rectangle(float xOrigin, float yOrigin, float width, float height) : base(xOrigin, yOrigin, (width + height) / 2, 4)
+        public Rectangle(float xOrigin, float yOrigin, float width, float height) : base(xOrigin, yOrigin)
         {
             Width = width;
             Height = height;
         }
 
-        public new void Draw()
+        public override void Draw()
         {
-            base.PrepareForDrawing();
+            ResetTurtle();
             for (int i = 0; i < 2; i++)
             {
                 Turtle.Rotate(90);
